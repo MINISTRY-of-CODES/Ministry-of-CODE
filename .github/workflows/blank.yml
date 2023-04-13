@@ -7,47 +7,18 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  build-and-deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
 
     steps:
       - name: 🛒 Checkout code
         uses: actions/checkout@v2
-
+        
       - name: 🚀 Use Node.js 16.x
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 16.x
-
-      - name: 📦 Install dependencies
-        run: npm install
-
-      - name: 🏗️ Build
-        run: npm run build
-
-      - name: 🚀 Deploy to Firebase Hosting
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-
-      - name: 📣 Notify on Slack
-        if: always()
-        uses: rtCamp/action-slack-notify@v2.0.0
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-        with:
-          status: ${{ job.status }}
-          mention: '@channel'
-          fields: repo,message,author,commit,action,eventName,eventPath,ref,workflow,job,took
-
-  build-and-deploy:
-    name: Build and Deploy
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: 🛒 Checkout code
-        uses: actions/checkout@v2
 
       - name: 📦 Install dependencies
         run: npm install
