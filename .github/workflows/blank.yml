@@ -26,9 +26,9 @@ jobs:
       - name: 🚀 SSH部署
         uses: easingthemes/ssh-deploy@v2.2.5
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          remote-host: ${{ secrets.REMOTE_HOST }}
-          remote-user: ${{ secrets.REMOTE_USER }}
-          remote-port: ${{ secrets.REMOTE_PORT }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USERNAME }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           source: dist/
           target: /www/wwwroot/www.mocd.cc
