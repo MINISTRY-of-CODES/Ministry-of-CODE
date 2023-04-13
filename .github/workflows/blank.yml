@@ -1,38 +1,29 @@
-name: CI
+name: Deploy to Remote Server
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches:
+      [master]
 
 jobs:
-  build-and-deploy:
-    name: Build and Deploy
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 🛒 Checkout code
+      - name: Checkout
         uses: actions/checkout@v2
-        
-      - name: 🚀 Use Node.js 16.x
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: 16.x
-
-      - name: 📦 Install dependencies
+      
+      - name: Install Dependencies
         run: npm install
-
-      - name: 🏗️ Build project
+      
+      - name: Build
         run: npm run build
-
-      - name: 🚀 Deploy to Server
-        uses: easingthemes/ssh-deploy@v2.2.18
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-rltgoDzvO --delete"
+      
+      - name: Deploy via SSH
+        uses: easingthemes/ssh-deploy@v2.2.5
         with:
-          server: ${{ secrets.SERVER }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          local_dir: ./build/
-          remote_dir: /www/wwwroot/www.mocd.cc
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+          remote-username: ${{ secrets.REMOTE_USERNAME }}
+          remote-host: ${{ secrets.REMOTE_HOST }}
+          local-path: dist/
+          remote-path: /www/wwwroot/www.mocd.cc
