@@ -1,24 +1,29 @@
-name: Deploy to Remote Server
-
+name: 🚀 部署至远程服务器 
 on:
   push:
     branches:
-      [master]
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: 🐟 配置Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+
+      - name: 🕵️‍♀️ Checkout
         uses: actions/checkout@v2
-      
-      - name: Install Dependencies
-        run: npm install
-      
-      - name: Build
+
+      - name: 📥 安装依赖
+        run: npm ci
+
+      - name: 🏗️ 构建
         run: npm run build
-      
-      - name: Deploy via SSH
+
+      - name: 🚀 SSH部署
         uses: easingthemes/ssh-deploy@v2.2.5
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
