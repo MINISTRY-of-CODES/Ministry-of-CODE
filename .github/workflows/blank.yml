@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: 📥 安装依赖
-        run: npm install
+        run: npm ci
 
       - name: 🏗️ 构建
         run: npm run build
@@ -27,8 +27,8 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.2.5
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
-          remote-username: ${{ secrets.REMOTE_USERNAME }}
           remote-host: ${{ secrets.REMOTE_HOST }}
-          local-path: dist/
-          remote-path: /www/wwwroot/www.mocd.cc
+          remote-user: ${{ secrets.REMOTE_USER }}
+          remote-port: ${{ secrets.REMOTE_PORT }}
+          source: dist/
+          target: /www/wwwroot/www.mocd.cc
