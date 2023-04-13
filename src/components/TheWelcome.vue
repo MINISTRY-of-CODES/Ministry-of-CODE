@@ -1,83 +1,32 @@
 <script setup lang="ts">
 import ProjectItem from './ProjecItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 </script>
 <template>
   <ProjectItem>
-    <template #heading>Documentation</template>
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    <template #heading>> Products</template>
+    <ProjectItem>
+      <template #heading>🫀Nucleus</template>
+      <p>
+        Nucleus is a web framework for building modern web applications. It is based on the <a href="https://https://spring.io/">Spring Boot framework</a> and we add a lot of features to make it easy to build web applications. It has a plugin system that makes it easy to add features to your application. 
+      </p>
+      <br>
+      <p>
+        We have created many plugins to make it easy to build web applications. We have also created a lot of examples to show how to use the plugins.
+      </p>
+    </ProjectItem>
+    <ProjectItem>
+      <template #heading>🏫Ribosome</template>
+      <p>
+        Ribosome is our Club Management for Xiamen University Malaysia, it is a web application that is used to manage the club. It is built with Nucleus and we link it to RootJam to make it easy to use for the club members and other users.
+      </p>
+    </ProjectItem>
   </ProjectItem>
 
   <ProjectItem>
-    <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank">Cypress Component Testing</a>.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
+    <template #heading>LTspice Tool for Mac</template>
+    <p>
+      LTspice Tool for Mac is a tool that provides a better experience for LTspice on Mac. It is provided as a free download and it is open source. You can find the LTspice measurement commands tool <a href="https://app.pamalee.cn/Ltspice.html">here</a>.
+    </p>
   </ProjectItem>
 
-  <ProjectItem>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
-  </ProjectItem>
-
-  <ProjectItem>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
-  </ProjectItem>
-
-  <ProjectItem>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </ProjectItem>
-  <ProjectItem>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </ProjectItem>
-  <ProjectItem>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </ProjectItem>
 </template>
