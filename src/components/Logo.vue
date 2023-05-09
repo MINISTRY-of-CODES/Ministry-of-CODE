@@ -2,7 +2,6 @@
 defineProps<{
   msg: string
 }>()
-const name = 'Logo';
 </script>
 
 <template>

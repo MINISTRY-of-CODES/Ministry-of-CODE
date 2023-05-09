@@ -12,6 +12,7 @@ import Logo from './components/Logo.vue'
       <Logo msg="Ministry of CODE" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/members">Members</RouterLink>
         <RouterLink to="/join">Join Us</RouterLink>
       </nav>
     </div>
