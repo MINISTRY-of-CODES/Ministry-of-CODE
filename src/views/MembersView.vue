@@ -39,6 +39,16 @@ const memberDatas = [
         name: 'HE YANGFAN',
         department: 'DEVELOPMENT',
         avatar: 'https://i.328888.xyz/2023/05/10/iQajGo.jpeg',
+    },
+    {
+        name: 'CHENG HUIYANG',
+        department: 'DEVELOPMENT',
+        avatar: 'https://s1.ax1x.com/2023/05/10/p9rnpYF.jpg',
+    },
+    {
+        name: 'LIANG ZIMAO',
+        department: 'DEVELOPMENT',
+        avatar: 'https://s1.ax1x.com/2023/05/10/p9rnkO1.jpg',
     }
 ]
 
