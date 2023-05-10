@@ -49,6 +49,10 @@ const memberDatas = [
         name: 'LIANG ZIMAO',
         department: 'DEVELOPMENT',
         avatar: 'https://s1.ax1x.com/2023/05/10/p9rnkO1.jpg',
+    },{
+        name: 'GU MENGHAN',
+        department: 'DEVELOPMENT',
+        avatar: 'https://s1.ax1x.com/2023/05/11/p9ru334.jpg'
     }
 ]
 
