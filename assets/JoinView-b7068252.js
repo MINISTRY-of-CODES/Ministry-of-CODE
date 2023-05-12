@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as n,a as e}from"./index-da6d1c39.js";const c={},o=e("div",{class:"text-center"},[e("h1",{class:"text-4xl font-bold"},"Join Us"),e("p",{class:"text-xl"},"We are currently building this page.")],-1),_=[o];function a(i,l){return s(),n("div",null,_)}const d=t(c,[["render",a]]);export{d as default};
