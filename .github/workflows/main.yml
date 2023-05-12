@@ -1,4 +1,4 @@
-name: Deploy to Github Page
+name: 部署到Github Pages
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
