@@ -1,46 +1,63 @@
-# MOC
+# Ministry of CODE
 
-This template should help get you started developing with Vue 3 in Vite.
+![Ministry of CODE](https://ribo.mocd.fun/static/MOC.01b5f832.png)
 
-## Recommended IDE Setup
+Welcome to Ministry of CODE! This is the official repository for our organization's homepage.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Introduction
 
-## Type Support for `.vue` Imports in TS
+Ministry of CODE is dedicated to promoting and advancing the world of coding and technology. We aim to provide valuable resources, training, and collaboration opportunities for developers, students, and tech enthusiasts.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Features
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- High-quality coding tutorials and articles
+- Open-source projects and contributions
+- Community forums and discussions
+- Tech events and workshops
+- Career guidance and mentorship
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Getting Started
 
-## Customize configuration
+To get started with Ministry of CODE, please visit our official website at [https://www.mocd.cc](https://www.mocd.cc). Here you will find more information about our organization, projects, and how to get involved.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Contributing
 
-## Project Setup
+We welcome contributions from the community! If you're interested in contributing to Ministry of CODE, please check out our [Contribution Guidelines](CONTRIBUTING.md) for more information on how to get started.
 
-```sh
-pnpm install
-```
+## Contact
 
-### Compile and Hot-Reload for Development
+If you have any questions, suggestions, or feedback, feel free to reach out to us at [feedback@mocd.cc](mailto:feedback@mocd.cc).
 
-```sh
-pnpm dev
-```
+Let's CODE together!
 
-### Type-Check, Compile and Minify for Production
+# Ministry of CODE
 
-```sh
-pnpm build
-```
+![Ministry of CODE](https://ribo.mocd.fun/static/MOC.01b5f832.png)
 
-### Lint with [ESLint](https://eslint.org/)
+欢迎来到 Ministry of CODE！这是我们组织主页的官方仓库。
 
-```sh
-pnpm lint
-```
+## 介绍
+
+Ministry of CODE 致力于推广和推进编码和技术领域的发展。我们旨在为开发人员、学生和技术爱好者提供有价值的资源、培训和协作机会。
+
+## 特点
+
+- 高质量的编码教程和文章
+- 开源项目和贡献
+- 社区论坛和讨论
+- 技术活动和研讨会
+- 职业指导和导师支持
+
+## 快速开始
+
+要开始使用 Ministry of CODE，请访问我们的官方网站 [https://www.mocd.cc](https://www.mocd.cc)。在这里，您将找到有关我们组织、项目以及如何参与的更多信息。
+
+## 贡献
+
+我们欢迎社区的贡献！如果您有兴趣为 Ministry of CODE 做贡献，请查阅我们的 [贡献指南](CONTRIBUTING.md) 以了解如何开始。
+
+## 联系我们
+
+如果您有任何问题、建议或反馈，请随时通过 [feedback@mocd.cc](mailto:feedback@mocd.cc) 联系我们。
+
+让我们一起来 CODE 吧！
