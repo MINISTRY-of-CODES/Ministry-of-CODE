@@ -57,7 +57,12 @@ const memberDatas = [
         name: 'PENG XINYUN',
         department: 'DEVELOPMENT',
         avatar: 'https://i.niupic.com/images/2023/05/11/b6Ch.jpg'
+    },{
+        name: 'QI YUJUN',
+        department: 'DEVELOPMENT',
+        avatar: 'https://s1.ax1x.com/2023/05/14/p9cr1b9.jpg'
     }
+
 ]
 
 </script>
