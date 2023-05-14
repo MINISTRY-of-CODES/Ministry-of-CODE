@@ -21,7 +21,7 @@ const memberDatas = [
         avatar: 'https://i.328888.xyz/2023/05/10/iQawmt.jpeg',
     },
     {
-        name: 'JIANG ZECEN',
+        name: 'JIANG YECEN',
         department: 'DEVELOPMENT',
         avatar: 'https://i.328888.xyz/2023/05/10/iQaVty.jpeg',
     },
