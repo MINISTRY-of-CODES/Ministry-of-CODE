@@ -256,7 +256,6 @@
 
                             <div class="clearfix"></div>
                             <div class="col-lg-12 col-12 mt-5 mt-lg-0" style="justify-content: center;">
-                                <form action="#" method="get" class="custom-form contact-form" role="form">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="form-floating">
@@ -275,10 +274,10 @@
                                         </div>
 
                                         <div class="col-lg-3 col-12 ms-auto">
-                                            <button type="submit" class="form-control">Send</button>
+                                            <button type="submit" onclick="sendMessage()" class="form-control">Send</button>
                                         </div>
                                     </div>
-                                </form>
+                                <div id="messagesContainer"></div>
                             </div>
                         </div>
                     </div>
@@ -299,7 +298,50 @@
                 </div>
             </div>
         </footer>
+<script>
+   function sendMessage() {
+        var name = document.getElementById("name").value;
+        var message = document.getElementById("message").value;
 
+        var xhr = new XMLHttpRequest();
+        var url = "process.php?action=newMessage&name=" + encodeURIComponent(name) + "&message=" + encodeURIComponent(message);
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // 处理服务器响应
+                console.log(xhr.responseText);
+                alert("Message sent successfully!");
+            }
+        };
+        xhr.send();
+    }
+    
+    function getMessages() {
+        var xhr = new XMLHttpRequest();
+        var url = "process.php?action=getMessage";
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // 处理服务器响应
+                var messages = JSON.parse(xhr.responseText);
+                console.log(messages);
+
+                // 在页面上显示信息列表
+                var messagesContainer = document.getElementById("messagesContainer");
+                messagesContainer.innerHTML = ""; // 清空容器
+
+                for (var i = 0; i < messages.length; i++) {
+                    var message = messages[i];
+                    var messageElement = document.createElement("div");
+                    messageElement.innerHTML = "ID: " + message.id + "<br>Name: " + message.name + "<br>Text: " + message.text + "<br>Created At: " + message.created_at + "<br><br>";
+                    messagesContainer.appendChild(messageElement);
+                }
+            }
+        };
+        xhr.send();
+    }
+    getMessages();
+</script>
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -308,6 +350,5 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/custom.js"></script>
-
     </body>
 </html>
