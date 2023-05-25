@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="description" content="">
-
-        <title>First Portfolio Bootstrap 5 Theme</title>
+        <title>Only You~~~~</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -299,22 +298,7 @@
             </div>
         </footer>
 <script>
-   function sendMessage() {
-        var name = document.getElementById("name").value;
-        var message = document.getElementById("message").value;
-
-        var xhr = new XMLHttpRequest();
-        var url = "https://api.pamalee.cn/only/index.php?action=newMessage&name=" + encodeURIComponent(name) + "&text=" + encodeURIComponent(message);
-        xhr.open("GET", url, true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // 处理服务器响应
-                console.log(xhr.responseText);
-                alert("Message sent successfully!");
-            }
-        };
-        xhr.send();
-    }
+   
     
     function getMessages() {
         var xhr = new XMLHttpRequest();
@@ -333,7 +317,7 @@
                 for (var i = 0; i < messages.length; i++) {
                     var message = messages[i];
                     var messageElement = document.createElement("div");
-                    messageElement.innerHTML = "ID: " + message.id + "<br>Name: " + message.name + "<br>Text: " + message.text + "<br>Created At: " + message.created_at + "<br><br>";
+                    messageElement.innerHTML = "Name: " + message.name + "<br>Text: " + message.text + "<br>Created At: " + message.created_at + "<br><br>";
                     messagesContainer.appendChild(messageElement);
                 }
             }
@@ -341,6 +325,23 @@
         xhr.send();
     }
     getMessages();
+    function sendMessage() {
+        var name = document.getElementById("name").value;
+        var message = document.getElementById("message").value;
+
+        var xhr = new XMLHttpRequest();
+        var url = "https://api.pamalee.cn/only/index.php?action=newMessage&name=" + encodeURIComponent(name) + "&text=" + encodeURIComponent(message);
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // 处理服务器响应
+                console.log(xhr.responseText);
+                alert("Message sent successfully!");
+            }
+        };
+        xhr.send();
+        getMessages();
+    }
 </script>
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
