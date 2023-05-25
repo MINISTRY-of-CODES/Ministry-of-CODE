@@ -304,7 +304,7 @@
         var message = document.getElementById("message").value;
 
         var xhr = new XMLHttpRequest();
-        var url = "process.php?action=newMessage&name=" + encodeURIComponent(name) + "&message=" + encodeURIComponent(message);
+        var url = "https://api.pamalee.cn/only/index.php?action=newMessage&name=" + encodeURIComponent(name) + "&text=" + encodeURIComponent(message);
         xhr.open("GET", url, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
@@ -318,7 +318,7 @@
     
     function getMessages() {
         var xhr = new XMLHttpRequest();
-        var url = "process.php?action=getMessage";
+        var url = "https://api.pamalee.cn/only/index.php?action=getMessage";
         xhr.open("GET", url, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
