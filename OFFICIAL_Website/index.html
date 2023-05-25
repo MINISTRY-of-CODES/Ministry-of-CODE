@@ -317,7 +317,7 @@
                 for (var i = 0; i < messages.length; i++) {
                     var message = messages[i];
                     var messageElement = document.createElement("div");
-                    messageElement.innerHTML = "Name: " + message.name + "<br>Text: " + message.text + "<br>Created At: " + message.created_at + "<br><br>";
+                    messageElement.innerHTML = "Name: " + message.name + "<br><h3> " + message.text + "</h3><br>Created At: " + message.created_at + "<br><br>";
                     messagesContainer.appendChild(messageElement);
                 }
             }
