@@ -13,32 +13,32 @@ const memberDatas = [
     {
         name: 'LI JIAKE',
         department: 'PRESIDENT',
-        avatar: 'https://i.328888.xyz/2023/05/10/iQTa8k.png',
+        avatar: 'https://s1.ax1x.com/2023/08/15/pPQuBss.png',
     },
     {
         name: 'SEOW YUXIANG',
         department: 'MANAGEMENT',
-        avatar: 'https://i.328888.xyz/2023/05/10/iQawmt.jpeg',
+        avatar: 'https://s1.ax1x.com/2023/08/15/pPQuDLn.png',
     },
     {
         name: 'JIANG YECEN',
         department: 'DEVELOPMENT',
-        avatar: 'https://i.328888.xyz/2023/05/10/iQaVty.jpeg',
+        avatar: 'https://s1.ax1x.com/2023/08/15/pPQu0Mj.png',
     },
     {
         name: 'MEN ZHAOLIN',
         department: 'DEVELOPMENT',
-        avatar: 'https://i.328888.xyz/2023/05/10/iQa2sJ.jpeg',
+        avatar: 'https://s1.ax1x.com/2023/08/15/pPQuaRg.png',
     },
     {
         name: 'LONG YING',
         department: 'DEVELOPMENT',
-        avatar: 'https://i.328888.xyz/2023/05/10/iQabIA.jpeg',
+        avatar: 'https://s1.ax1x.com/2023/08/15/pPQudzQ.png',
     },
     {
         name: 'HE YANGFAN',
         department: 'DEVELOPMENT',
-        avatar: 'https://i.328888.xyz/2023/05/10/iQajGo.jpeg',
+        avatar: 'https://s1.ax1x.com/2023/08/15/pPQuyd0.png',
     },
     {
         name: 'CHENG HUIYANG',
